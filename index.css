@@ -3,7 +3,8 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;   /* ارتفاع کامل صفحه */
-  background: #f4f4ee;
+  background: url(https://biaupload.com/do.php?imgf=org-acc315d547d21.jpg) no-repeat center center fixed;
+  background-size: cover;
   font-family: 'Pixelify Sans', sans-serif;
   font-size: 20px;
   margin: 0;
