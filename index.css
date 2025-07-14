@@ -1,1 +1,195 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;   /* ارتفاع کامل صفحه */
+  background: #f4f4ee;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+  flex-direction: column;
+}
 
+p {
+    font-size: 8px;
+}
+
+.window {
+  max-width: 600px;
+  background: white;
+  border: 2px solid #999;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px #ccc;
+  overflow: hidden;
+}
+
+.window-header {
+  font-size: small;
+  background: linear-gradient(to right, #d3e2ff, #fbe8ff);
+  padding: 6px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  border-bottom: 1px solid #bbb;
+}
+
+.window-header .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.window-header .red { background: #ff5f56; }
+.window-header .yellow { background: #ffbd2e; }
+.window-header .green { background: #27c93f; }
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  margin-left: 10px;
+}
+
+.header-right a {
+  color: #666;
+  font-size: smaller;
+  text-decoration: none;
+  margin-left: 6px;
+}
+
+.window-body {
+  display: flex;
+  padding: 15px;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+  width: 200px;
+  align-items: center;
+}
+
+.sidebar img {
+  width: 95%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.section {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.section-title {
+  font-size: larger;
+  font-weight: bold;
+  margin-bottom: 5px;
+  border-bottom: 1px dashed #999;
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 220px;
+  min-width: 150px;
+}
+
+.card {
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 6px;
+}
+
+.highlight {
+  background: #d0e6d0;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.danger {
+  background: #ffe9e9;
+  color: darkred;
+  font-weight: bold;
+}
+
+/* ————— RESPONSIVE ————— */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .window {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .window-body {
+    flex-direction: column;
+    padding: 15px;
+    gap: 5px;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+  .main {
+    width: 100%;
+  }
+
+  .window-header {
+    padding: 8px 12px;
+  }
+
+  .card {
+    padding: 12px;
+  }
+
+  .card-img {
+    margin-top: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+    font-size: 23px;
+  }
+
+  .window-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .header-left {
+    flex-wrap: nowrap;
+  }
+
+  .card-img {
+    margin-top: 4px;
+  }
+}
