@@ -3,7 +3,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;   /* ارتفاع کامل صفحه */
-  background: url(https://biaupload.com/do.php?imgf=org-6df98aa4def11.jpg);
+  background: url(https://biaupload.com/do.php?imgf=org-993fcd48b8961.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Pixelify Sans', sans-serif;
@@ -19,24 +19,43 @@ p {
     font-size: 10px;
 }
 
+a {
+  color: #27c93f;
+}
+
+a:hover{
+  font-style: italic;
+}
+::selection{
+  background-color: #b9ffd0;
+  color: #27c93f;
+}
+
 .window {
-  width: 600px;
+  width: 700px;
   background: white;
-  border: 2px solid #999;
-  border-radius: 5px;
+  border-radius: 20px;
   box-shadow: 1px 20px 29px #0000002e;
+  overflow: hidden;
+  padding: 5px 0px 5px 0px;
+}
+
+.wbody{
+  display: flex;  
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
   overflow: hidden;
 }
 
 .window-header {
   font-size: 12px;
-  background: linear-gradient(to right, #d3e2ff, #fbe8ff);
-  padding: 6px 12px;
+  background: #ffffff;
+  padding: 12px 12px 8px 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
-  border-bottom: 1px solid #bbb;
 }
 
 .window-header .circle {
@@ -50,6 +69,17 @@ p {
 .window-header .red { background: #ff5f56; }
 .window-header .yellow { background: #ffbd2e; }
 .window-header .green { background: #27c93f; }
+
+.top-box {
+  display: flex;
+  justify-content: space-between;  
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+  padding: 3px 10px;
+  background: linear-gradient(127deg, #faecff, #dff5ff, #ffecec);
+  border-radius: 6px;
+}
 
 .header-left {
   display: flex;
@@ -69,7 +99,7 @@ p {
 
 .window-body {
   display: flex;
-  padding: 15px;
+  padding: 0px 12px 12px 12px;
   gap: 20px;
   justify-content: space-between;
 }
@@ -80,6 +110,8 @@ p {
   font-size: 9px;
   width: 200px;
   align-items: center;
+  padding: 15px 10px;
+  background-color: #f0fff3;
 }
 
 .sidebar img {
@@ -106,10 +138,10 @@ p {
   flex-direction: column;
   gap: 5px;
   width: 220px;
+  padding: 15px 10px;
 }
 
 .card {
-  background: #f9f9f9;
   padding: 10px;
   border-radius: 6px;
   display: flex;
@@ -124,11 +156,8 @@ p {
 }
 
 
-
 .highlight {
-  background: #fffdb9;
-  padding: 2px 4px;
-  border-radius: 4px;
+  background: #f9f5c0;
 }
 
 .danger {
@@ -153,7 +182,6 @@ p {
   }
 
   .window-body {
-    padding: 15px;
     gap: 15px;
   }
 
@@ -165,7 +193,7 @@ p {
   }
 
   .window-header {
-    padding: 8px 12px;
+    padding: 8px 12px 8px 12px;
   }
 
   .card {
